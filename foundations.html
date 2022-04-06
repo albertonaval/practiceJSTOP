@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Title</title>
+  </head>
+  <body>
+    <script>
+      // Practice Fundamentals part 3.//
+      let number = prompt("Pick a number");
+      function add7(number) {
+        return number++ + 7;
+      }
+      alert(add7(number));
+
+      let number2 = prompt("Pick a number");
+      let number3 = prompt("Pick a number");
+      function multiply(number2, number3) {
+        return number2 * number3;
+      }
+      alert(multiply(number2, number3));
+
+      let string = "alberto";
+      let newString = string.toUpperCase()[0];
+      function capitalize() {
+        return newString;
+      }
+      alert(capitalize(newString));
+
+      let letter = "alberto";
+      let newsLetter = letter.toLowerCase()[6];
+      function lastLetter() {
+        return newsLetter;
+      }
+      alert(lastLetter(newsLetter));
+    </script>
+  </body>
+</html>
