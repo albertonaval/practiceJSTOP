@@ -12,6 +12,7 @@
         return number++ + 7;
       }
       alert(add7(number));
+      console.log(number);
 
       let number2 = prompt("Pick a number");
       let number3 = prompt("Pick a number");
@@ -19,18 +20,21 @@
         return number2 * number3;
       }
       alert(multiply(number2, number3));
+      console.log(number2, number3);
 
       let string = prompt("Pick a word");
       function capitalize(word) {
         return string.toUpperCase()[0];
       }
       alert(capitalize(string));
+      console.log(string);
 
       let word = prompt("Pick a word");
       function lastLetter(word) {
         return word.toLowerCase()[-1];
       }
-      console.log(alert(lastLetter(word)));
+      alert(lastLetter(word));
+      console.log(word);
 
       let answer = parseInt(prompt("Pick a number"));
 
@@ -44,6 +48,7 @@
         } else {
           alert(i);
         }
+        console.log(i);
       }
     </script>
   </body>
