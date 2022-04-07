@@ -20,19 +20,31 @@
       }
       alert(multiply(number2, number3));
 
-      let string = "alberto";
-      let newString = string.toUpperCase()[0];
-      function capitalize() {
-        return newString;
+      let string = prompt("Pick a word");
+      function capitalize(word) {
+        return string.toUpperCase()[0];
       }
-      alert(capitalize(newString));
+      alert(capitalize(string));
 
-      let letter = "alberto";
-      let newsLetter = letter.toLowerCase()[6];
-      function lastLetter() {
-        return newsLetter;
+      let word = prompt("Pick a word");
+      function lastLetter(word) {
+        return word.toLowerCase()[-1];
       }
-      alert(lastLetter(newsLetter));
+      console.log(alert(lastLetter(word)));
+
+      let answer = parseInt(prompt("Pick a number"));
+
+      for (let i = 1; i <= answer; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+          alert("FizzBuzz");
+        } else if (i % 3 === 0) {
+          alert("Fizz");
+        } else if (i % 5 === 0) {
+          alert("Buzz");
+        } else {
+          alert(i);
+        }
+      }
     </script>
   </body>
 </html>
